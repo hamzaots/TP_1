@@ -13,19 +13,19 @@ public class QuadraticEquationTest {
     }
     @Test
     void shouldReturnOneSolutionIfDeltaIsNull(){
-        Double[] t={2.0};
+        double[] t={2.0};
         Assertions.assertArrayEquals(t,QuadraticEquation.solve(1,-4,4));
     }
 
     @Test
     void shouldReturntwoSolutionsIfDeltaIsPositive(){
-        Double[] t={1.0,0.5};
-        Assertions.assertEquals(QuadraticEquation.solve(2,-3,1),t);
+        double[] t={1.0,0.5};
+        Assertions.assertArrayEquals(QuadraticEquation.solve(2,-3,1),t);
     }
     @Test
 
     void shouldReturNullIfDestaIsNegative(){
-        Double[] t=null;
+        double[] t=null;
         Assertions.assertEquals(QuadraticEquation.solve(1,2,5),t);
     }
 }
